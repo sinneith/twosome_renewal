@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+*{ padding: 0; margin: 0; color: #656464; font-family: 'Noto Sans KR', sans-serif; }
+li{ list-style: none; }
+a{ text-decoration: none; }
+img{ display: block; }
+
+
+/* layout */
+header{ width: 100%; height: 200px; }
+.gnb{ float: right; width: 1090px; }
+.wrap{ width: 1320px; height: 100%; margin: 0 auto; position: relative; }
+footer{ width: 100%; height: 330px; background-color: #666; position: relative; }
+
+
+/* header */
+header h1{ width: 230px; height: 200px; float: left; margin-top: 30px; }
+.tnav{ float: right; margin-top: 40px; }
+.tnav > ul{ position: relative; z-index: 10; }
+.tnav li{ float: left; margin-right: 25px; }
+.tnav a{ font-size: 18px; }
+.tnav .search_box{ overflow: hidden; position: absolute; top: 28px; right: -40px; width: 420px; height: 50px; z-index: 11; }
+.tnav .icon{ cursor: pointer; padding-top: 15px; box-sizing: border-box; z-index: 100; width: 50px; height: 50px; position: absolute; top: 0; right: 0px; }
+.tnav img{ margin: 0 auto; }
+.search_box .input{ position: relative; }
+.search_box .box{ position: absolute; width: 420px; height: 50px; transition: 0.3s; top: 0; right: -420px; z-index: 50; }
+#search_box{ width: 100%; height: 100%; border: 1px solid #999; padding-left: 20px; box-sizing: border-box; transition: 0.3s; font-size: 16px; background-color: #fff; z-index: 2000; }
+#search_box:focus{ outline: none; }
+#search_box:focus::placeholder{ color: transparent; }
+.search_box .icon.active + div > div{ right: 0; }
+
+
+/* gnb */
+.gnb > ul{ float: right; width: 100%; }
+.gnb > ul > li{ float: left; margin-top: 20px; text-align: center; width: 16%; line-height: 70px; }
+.mainnav{ display: block; width: 100%; height: 100%; font-size: 24px; color: #333; font-weight: 500; }
+.gnb li:hover .mainnav{ color: #e9615d; }
+.subnav{ display: none; width: 13%; height: 100%; position: absolute; z-index: 200; top: 180px; }
+.subnav li{ text-align: center; }
+.subnav a{ display: block; width: 100px; font-size: 18px; line-height: 50px; width: 100%; height: 100%;  }
+.subnav a:hover{ color: #fff; background-color: #e9615d; }
+.gnbbg{ display: none; position: absolute; top: 160px; left: 0; z-index: 100; width: 100%; margin: 0 auto; 
+    background-color: #fff; height: 300px; }
+
+
+/* footer */
+.f_top{ width: 1200px; height: 110px; margin: 0 auto; }
+.f_top ul{ text-align: center; }
+.f_top li{ width: 20%; float: left; }
+.f_top a{ color: #fff; font-size: 20px; font-weight: normal; line-height: 110px; }
+.f_bottom{ width: 100%; height: 220px; position: relative; }
+.f_bottom h1, .f_bottom p{ float: left; }
+.f_bottom p{ color: #fff; font-size: 16px; margin: 0 30px; line-height: 28px; }
+.family_site, .sns_icon{ float: right; }
+.family_site{ width: 200px; height: 445px; position: absolute; top: -415px; right: 0; overflow: hidden; }
+.family_site button{ 
+    cursor: pointer; width: 200px; height: 35px; border: 1px solid #c0c0c0; box-sizing: border-box;
+    font-size: 15px; text-align: left; padding-left: 20px; line-height: 5px; font-weight: 500; background-color: #fff; 
+    position: absolute; z-index: 23; top: 415px;
+}
+.family_site button img{ float: right; margin-right: 20px; }
+.family_site > ul{ 
+    position: absolute; z-index: 22; transition: 0.3s; top: 415px;
+    width: 200px; height: 415px; padding: 20px 0 20px 20px; border: 1px solid #c0c0c0; 
+    box-sizing: border-box; background-color: #fff;
+}
+.family_site button.active + ul{ top: 0; }
+.family_site button.active > img{ transform: rotate(180deg); }
+.family_site .f_title{ font-size: 16px; width: 100%; font-weight: 500; line-height: 30px; }
+.family_site .f_title a{ width: 100%; margin-left: 10px; font-size: 14px; font-weight: normal; }
+.sns_icon li{ float: left; margin: 50px 5px 0 0; }
+.sns_icon li:last-child{ margin-right: 0; }
+.sns_icon img{ width: 45px; }
+
+
+/* scrolltop */
+aside{ 
+    display: none; position: fixed; width: 55px; height: 55px; z-index: 21;
+    background-color: #000; bottom: 16vw; right: 7vw; 
+    text-align: center; padding: 5px; box-sizing: border-box;
+}
+aside a{ display: block; width: 100%; height: 100%; color: #fff; font-size: 16px; font-weight: normal; }
+aside img{ margin: 5px auto 0; }

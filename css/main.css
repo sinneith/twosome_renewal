@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* layout */
+.main{ width: 100%; height: 700px; position: relative; }
+.newsnnotice{ width: 100%; height: 65px; margin: 0 auto; }
+.new{ width: 100%; height: 700px; }
+.recommend{ width: 1400px; margin: 0 auto; height: 820px; margin-top: 50px; }
+.contents{ width: 1320px; height: 1190px; margin: 0 auto 100px; }
+.reservation{ width: 100%; height: 800px; }
+.brandstory{ width: 100%; height: 600px; margin-top: 150px; }
+
+
+/* popup */
+.popup{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); z-index: 4000; }
+.pwrap{
+    position: absolute; z-index: 5000;
+    left: 0; right: 0; top: 40px; bottom: 0; margin: auto;
+    width: 490px; height: 520px; text-align: center;
+    background-color: #fff; border: 1px solid #717171; box-sizing: border-box;
+ }
+ .p_top .notice{ width: 100%; height: 440px; padding-top: 50px; box-sizing: border-box; }
+ .p_top h2{ font-size: 40px; letter-spacing: 4px; font-weight: bold; color: #f16868; margin-bottom: 10px; }
+ .p_top p{ font-size: 20px; line-height: 35px; color: #717171; }
+ .p_top .notice span{ font-weight: 500; color: #f16868; } 
+ .p_bottom{ width: 100%; height: 80px; }
+ .p_bottom ul{ width: 100%; height: 100%; }
+ .p_bottom li{ float: left; width: 50%; height: 100%; text-align: center; }
+ .p_bottom li:last-child{ float: right; border-left: 1px solid #fff; box-sizing: border-box; }
+ .p_bottom a{ display: block; width: 100%; height: 100%; background-color: #f16868; line-height: 80px; color: #fff; font-size: 20px; }
+
+
+/* main */
+.main img{ width: 100%; height: 100%; object-fit: cover; }
+.main .swiper-container{ width: 100%; height: 100%; position: absolute; top: 0; }
+.main .swiper-slide{ width: 100%; height: 100%; position: relative; }
+.twrap{ width: 1320px; height: 700px; position: relative; top: -700px; margin: 0 auto; text-align: center; }
+.main span, .main p, .main h2, .main li{ font-family: 'Recipekorea'; }
+
+.main01 p{ font-size: 60px; color: #fff; text-shadow: 2px 2px 5px #f16868; }
+.main01 p:first-child{ text-align: left; margin: 180px 0 0 350px; }
+.main01 span{ font-size: 100px; color: #fff; text-shadow: 4px 4px 5px #f16868;  }
+.main01 p:last-child{ font-size: 30px; text-shadow: none; color: #f16868; line-height: 50px; margin-top: 20px; }
+
+.main02 .twrap{ text-align: left; padding: 200px 0 0 70px; box-sizing: border-box; }
+.main02 h2{ font-size: 80px; color: #fff; text-shadow: 4px 4px 2px #90bf9d; margin-bottom: 20px; }
+.main02 p{ font-size: 50px; color: #fff; text-shadow: 2px 2px 4px #90bf9d;  }
+.main02 .drink p{ font-size: 22px; position: relative; left: 800px; text-shadow: none; }
+#d01{ position: relative; top: -330px; left: 430px; color: #1fb57c; text-align: center; }
+#d02{ position: relative; top: -140px; left: 250px; text-align: center; }
+#d03{ position: relative; top: -80px; left: 220px; text-align: center; }
+
+.title{ width: 1320px; text-align: center; margin-top: 100px; } 
+.title li{ color: #ffe872; font-size: 40px; display: inline-block; padding-right: 70px; box-sizing: border-box; }
+.title li:last-child{ color: #e28447; }
+.main03 .twrap p{ color: #fff; font-size: 60px; text-align: center; margin-top: 20px; text-shadow: 2px 2px 7px #efc41b; }
+.menu{ width: 1320px; text-align: center; margin-top: 240px; }
+.menu li{ display: inline-block; color: #fff; font-size: 22px; margin-right: 300px; }
+.menu li:first-child{ position: relative; left: -70px; }
+.menu li:last-child{ margin-right: 0; }
+
+.swiper-button-next:after, .swiper-button-prev:after{ color: #fff; font-size: 60px; }
+.swiper-button-next:after{ margin-right: 250px; }
+.swiper-button-prev:after{ margin-left: 250px; }
+.swiper-pagination-bullet{
+    border: 1px solid #fff!important; background-color: transparent;
+    width: 15px; height: 15px; margin-left: 20px!important; opacity: 1;
+    position: relative; bottom: 20px; 
+}
+.swiper-pagination-bullet-active{ background-color: #fff; }
+
+
+/* news & notice */
+.newsnnotice{ border-bottom: 2px solid #ccc; }
+.newsnnotice .wrap{ text-align: center; position: relative; }
+.newsnnotice h3{ display: block; float: left; font-size: 24px; line-height: 65px; margin-left: 30px; }
+.newsnnotice p{ font-size: 20px; line-height: 65px; }
+.news{ float: left; width: 50%; height: 100%; }
+.notice{ float: right; width: 50%; height: 100%; }
+.line{ position: absolute; top: 0; left: 630px; font-size: 40px; width: 1px; color: #ccc; line-height: 65px; }
+
+
+/* new product */
+.new h2{ text-align: center; font-size: 40px; margin-top: 70px; }
+.new img{ display: block; margin: 0 auto; width: 280px; }
+.new h3{ font-size: 22px; margin-top: 30px; font-weight: 500; }
+.new h4{ font-size: 14px; margin-bottom: 10px; font-weight: 500; }
+.new p{ font-size: 18px; line-height: 26px; }
+.new > .swiper-container{ width: 1320px; height: 600px; }
+.new .swiper-wrapper{ height: 100%; }
+.new .swiper-slide{ float: left; width: 100%; height: 100%; text-align: center; }
+.more{ margin: 50px auto 0; border-radius: 25px; border: 1px solid #f16868; line-height: 52px; box-sizing: border-box; width: 200px; height: 50px; text-align: center; background-color: #fff; }
+.more a{ font-size: 20px; color: #f16868; display: block; width: 100%; height: 100%; border-radius: 25px; }
+.more a:hover{ background-color: #f16868; color: #fff; transition: 0.3s; }
+.new .swiper-button-prev:after, .new .swiper-button-next:after{ color: #cdcdcd; }
+
+
+/* recommend */
+.recommend .btn{ width: 100%; height: 50px; padding-left: 30px; box-sizing: border-box; text-align: center; }
+.recommend .btn li{ margin-right: 2px; float: left; border: 1px solid #f16868; border-bottom: none; box-sizing: border-box; width: 170px; height: 50px; border-radius: 15px 15px 0 0; }
+.recommend .btn a{ display: block; width: 100%; height: 100%; border-radius: 15px 15px 0 0; font-size: 24px; color: #f16868; font-weight: 500; line-height: 54px; }
+.recommend .btn a.active{ background-color: #f16868; color: #fff; }
+.conwrap{ padding: 0 50px; width: 100%; height: 680px; border: 1px solid #f16868; box-sizing: border-box; text-align: center; }
+.conwrap > div{ display: none; width: 100%; height: 100%; }
+.conwrap li{ float: left; width: 25%; }
+.conwrap img{ display: block; margin: 0 auto; width: 300px; }
+.conwrap h3{ font-size: 22px; margin-top: 40px; margin-bottom: 5px; font-weight: 500; }
+.conwrap h4{ font-size: 14px; margin-bottom: 15px; font-weight: 500; }
+.conwrap p{ font-size: 18px; line-height: 30px; }
+.recommend .more{ position: relative; top: -170px; }
+
+
+/* reservation */
+.reservation{ text-align: center; margin: 50px 0 150px 0; background-image: url(../images/main/reservation_banner); background-repeat: no-repeat; background-position: center; background-attachment: fixed; background-size: cover; }
+.reservation .wrap > div{ width: 100%; height: 50%; }
+.reservation h2{ color: #fff; font-size: 60px; text-shadow: 1px 1px 3px #000; padding-top: 150px; box-sizing: border-box; }
+.reservation p{ font-size: 30px; color: #fff; margin: 20px 0 80px 0; line-height: 42px; }
+.reservation .store h2{ padding: 50px 0 30px 0; box-sizing: border-box; }
+.away{ position: absolute; left: -999em; }
+#search_store{ width: 500px; height: 70px; border: 4px solid #fff; background-color: transparent; padding: 0 20px; box-sizing: border-box; color: #fff; font-size: 20px; }
+#search_store::placeholder{ color: #fff; font-size: 20px; position: relative; top: 2px; }
+#search_store:focus{ outline: none; }
+#search_store:focus::placeholder{ color: transparent; }
+.store img{ position: relative; left: 850px; top: -50px; }
+
+
+/* event */
+.event, .sns{ margin-bottom: 40px; }
+.event{ 
+    float: left; width: 710px; height: 570px; background-image: url(../images/main/event); 
+    background-repeat: no-repeat; background-size: cover; text-align: center; 
+    padding: 140px 0; box-sizing: border-box;
+}
+.event h2, .event span{ color: #fff; font-family: 'Recipekorea'; font-size: 50px; text-shadow: 4px 4px 2px #e8623f; }
+.event span{ font-size: 85px; position: relative; top: -5px; }
+.event p{ color: #fff; font-size: 20px; position: relative; top: -10px; }
+
+
+/* franchise */
+.franchise{ 
+    float: right; width: 675px; height: 580px; background-image: url(../images/main/franchise);
+    background-repeat: no-repeat; background-size: cover; text-align: center;
+    padding: 100px 0; box-sizing: border-box;
+}
+.franchise h2{ color: #fff; font-size: 40px; line-height: 57px; font-weight: 500; }
+.franchise p{ color: #fff; font-size: 18px; line-height: 30px; margin-top: 30px; }
+.franchise .btn ul{ text-align: center; }
+.franchise .btn li{ 
+    margin: 30px 5px 0 0; 
+    display: inline-block; border: 1px solid #fff; text-align: center; 
+    width: 110px; height: 50px; line-height: 50px; box-sizing: border-box;
+}
+.franchise .btn a{ color: #fff; font-size: 18px; display: block; width: 100%; height: 100%; }
+.franchise .btn li:hover{ background-color: #df1f26; border: none; transition: 0.3s; }
+
+
+/* banner */
+.banner{ float: left; width: 605px; height: 580px; }
+.banner > div{ width: 293px; height: 280px; }
+.banner01, .banner03{ float: left; }
+.banner01, .banner02{ margin-bottom: 20px; }
+.banner01, .banner04{ border: 1px solid #f16868; padding: 30px 0 0 30px; box-sizing: border-box; font-size: 30px; color: #f16868; font-weight: 700; line-height: 50px; }
+.banner02{ float: right; background-image: url(../images/main/banner01); color: #fff; font-size: 18px; text-align: center; padding-top: 220px; box-sizing: border-box; font-weight: 500; }
+.banner03{ background-image: url(../images/main/banner02); text-align: center; }
+.banner03 .p01{ color: #fff; font-size: 24px; margin-top: 25px; font-weight: 700; }
+.banner03 .p02{ color: #fff; font-size: 30px; margin-top: 155px; margin-left: 14px; font-weight: 700; }
+.banner04{ float: right; text-align: right; padding-right: 30px; box-sizing: border-box; }
+
+
+/* sns */
+.sns{ float: right; width: 570px; height: 570px; }
+.sns img{ width: 180px; }
+.sns > ul > li{ float: left; margin-right: 15px; width: 180px; height: 180px; }
+.sns > ul > li > a{ position: relative;  width: 100%; height: 100%; display: block; }
+.sns .margin{ margin-top: 15px; margin-bottom: 15px; }
+.sns .last{ margin-right: 0; }
+.sns .red{ opacity: 0; padding: 15px; box-sizing: border-box; line-height: 20px; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(233,97,93,0.4); }
+.red .id{ font-size: 16px; margin-bottom: 40px; }
+.red .post{ font-size: 12px; }
+.sns .red > div{ color: #fff; font-weight: normal; }
+.sns > ul > li:hover .red{ opacity: 1; transition: 0.3s; }
+
+
+/* brandstory */
+.brandstory{ width: 100%; height: 600px; margin-top: 150px; }
+.brandstory{ background-image: url(../images/main/brandstory); background-position: center; background-size: cover; background-repeat: no-repeat; padding: 65px 50px; box-sizing: border-box; }
+.brandstory iframe{ float: left; }
+.brandstory .b_wrap{ position: relative; width: 1320px; height: 100%; margin: 0 auto; }
+.brandstory p{ text-align: right; color: #fff; font-size: 70px; text-shadow: 2px 2px #000; font-weight: 700; }
+.brandstory span{ color: #df1f26; }
+.brandstory .b_wrap a{ z-index: 20; display: block; width: 210px; height: 50px; position: relative; top: -40px; animation: move 0.8s ease-in-out infinite alternate; animation-play-state: paused; }
+.b_wrap > a p{ text-align: left; line-height: 10px; font-size: 20px; color: #fff; font-weight: 500; text-shadow: none; }
+.brandstory .b_wrap a:hover{ animation-play-state: running; }
+@keyframes move{ from{right: -1100px;} to{right: -1115px;}}
